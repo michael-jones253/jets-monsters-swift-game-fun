@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-func GetCollisionSpriteByCategory(collisionBody: SKPhysicsBody, category:UInt32)->SKSpriteNode? {
+public func GetCollisionSpriteByCategory(collisionBody: SKPhysicsBody, category:UInt32)->SKSpriteNode? {
     if collisionBody.categoryBitMask & category != 0 {
         return collisionBody.node as? SKSpriteNode
     }
@@ -17,7 +17,7 @@ func GetCollisionSpriteByCategory(collisionBody: SKPhysicsBody, category:UInt32)
     return nil
 }
 
-func GetCollisionSpritesByCategory(collisionContact:SKPhysicsContact, category:UInt32) ->Array<SKSpriteNode> {
+public func GetCollisionSpritesByCategory(collisionContact:SKPhysicsContact, category:UInt32) ->Array<SKSpriteNode> {
     var nodes = Array<SKSpriteNode>()
     
     let spriteA = GetCollisionSpriteByCategory(collisionContact.bodyA, category)
@@ -33,7 +33,7 @@ func GetCollisionSpritesByCategory(collisionContact:SKPhysicsContact, category:U
     return nodes
 }
 
-func SetupNodePhysics(sprite:SKSpriteNode, #isDynamic:Bool, #nodeCategory:UInt32, #contactNotificationMask:UInt32) {
+public func SetupNodePhysics(sprite:SKSpriteNode, #isDynamic:Bool, #nodeCategory:UInt32, #contactNotificationMask:UInt32) {
     sprite.physicsBody = SKPhysicsBody(rectangleOfSize: sprite.frame.size)
     
     // Whether it has in built sprite kit physics or not.
@@ -50,7 +50,7 @@ func SetupNodePhysics(sprite:SKSpriteNode, #isDynamic:Bool, #nodeCategory:UInt32
     // sprite.physicsBody?.collisionBitMask
 }
 
-func ApplyLiftImpulseToZRotation(sprite: SKSpriteNode, magnitude: CGFloat) {
+public func ApplyLiftImpulseToZRotation(sprite: SKSpriteNode, magnitude: CGFloat) {
     let impulseVector = GetVectorFromRotation(sprite, magnitude: magnitude, extraRotation: CGFloat(M_PI_2))
     
     // Assume stationary launch.
@@ -63,25 +63,25 @@ func ApplyLiftImpulseToZRotation(sprite: SKSpriteNode, magnitude: CGFloat) {
 }
 
 extension SKSpriteNode {
-    func ApplyLiftForce(magnitude: CGFloat) {
+    public func ApplyLiftForce(magnitude: CGFloat) {
         let forceVector = GetVectorFromRotation(self, magnitude: magnitude, extraRotation: CGFloat(M_PI_2))
 
         self.physicsBody?.applyForce(forceVector)
     }
 
-    func ApplyThrust(magnitude: CGFloat) {
+    public func ApplyThrust(magnitude: CGFloat) {
         let forceVector = GetVectorFromRotation(self, magnitude: magnitude, extraRotation: CGFloat(0.0))
         
         self.physicsBody?.applyForce(forceVector)
     }
     
-    func ApplyReverseImpulse(magnitude: CGFloat) {
+    public func ApplyReverseImpulse(magnitude: CGFloat) {
         let impulseVector = GetVectorFromRotation(self, magnitude: magnitude, extraRotation: CGFloat(M_PI))
         
         self.physicsBody?.applyImpulse(impulseVector)
     }
     
-    func CreateAndLaunchMissile(#theScene:SKScene, missileTexture: SKTexture, nodeCategory:UInt32, contactNotificationMask:UInt32,  magnitude: CGFloat, lifetimeAction: SKAction) {
+    public func CreateAndLaunchMissile(#theScene:SKScene, missileTexture: SKTexture, nodeCategory:UInt32, contactNotificationMask:UInt32,  magnitude: CGFloat, lifetimeAction: SKAction) {
         var missile = SKSpriteNode(texture: missileTexture)
         missile.position = self.position
         theScene.addChild(missile)

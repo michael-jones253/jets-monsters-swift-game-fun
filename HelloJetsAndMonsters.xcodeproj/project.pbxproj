@@ -37,6 +37,16 @@
 		B2E4E8CC1AB6B56000C8CBF9 /* Speedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8CB1AB6B56000C8CBF9 /* Speedometer.swift */; };
 		B2E4E8CE1AB6B56A00C8CBF9 /* VectorStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8CD1AB6B56A00C8CBF9 /* VectorStuff.swift */; };
 		B2E4E8D01AB6B59200C8CBF9 /* FloatingPointStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8CF1AB6B59200C8CBF9 /* FloatingPointStuff.swift */; };
+		B2E4E8D21AB6B87A00C8CBF9 /* MyLevel2Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8D11AB6B87A00C8CBF9 /* MyLevel2Scene.swift */; };
+		B2E4E8D51AB6B89300C8CBF9 /* MonsterTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8D31AB6B89300C8CBF9 /* MonsterTextures.swift */; };
+		B2E4E8D61AB6B89300C8CBF9 /* MyCollisionMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8D41AB6B89300C8CBF9 /* MyCollisionMasks.swift */; };
+		B2E4E8D81AB6B8BB00C8CBF9 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8D71AB6B8BB00C8CBF9 /* Dashboard.swift */; };
+		B2E4E8DB1AB6B8DB00C8CBF9 /* JetDashboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8D91AB6B8DB00C8CBF9 /* JetDashboardData.swift */; };
+		B2E4E8DC1AB6B8DB00C8CBF9 /* Level2Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8DA1AB6B8DB00C8CBF9 /* Level2Dashboard.swift */; };
+		B2E4E8DE1AB6B8EE00C8CBF9 /* ThrustDataLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8DD1AB6B8EE00C8CBF9 /* ThrustDataLookup.swift */; };
+		B2E4E8E01AB6B9BE00C8CBF9 /* FileLevelLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8DF1AB6B9BE00C8CBF9 /* FileLevelLookup.swift */; };
+		B2E4E8E21AB6BB4900C8CBF9 /* JetSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8E11AB6BB4900C8CBF9 /* JetSprite.swift */; };
+		B2E4E8E41AB6BB7C00C8CBF9 /* RandomStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4E8E31AB6BB7C00C8CBF9 /* RandomStuff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +153,16 @@
 		B2E4E8CB1AB6B56000C8CBF9 /* Speedometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speedometer.swift; sourceTree = "<group>"; };
 		B2E4E8CD1AB6B56A00C8CBF9 /* VectorStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorStuff.swift; sourceTree = "<group>"; };
 		B2E4E8CF1AB6B59200C8CBF9 /* FloatingPointStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPointStuff.swift; sourceTree = "<group>"; };
+		B2E4E8D11AB6B87A00C8CBF9 /* MyLevel2Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLevel2Scene.swift; sourceTree = "<group>"; };
+		B2E4E8D31AB6B89300C8CBF9 /* MonsterTextures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterTextures.swift; sourceTree = "<group>"; };
+		B2E4E8D41AB6B89300C8CBF9 /* MyCollisionMasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollisionMasks.swift; sourceTree = "<group>"; };
+		B2E4E8D71AB6B8BB00C8CBF9 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		B2E4E8D91AB6B8DB00C8CBF9 /* JetDashboardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JetDashboardData.swift; sourceTree = "<group>"; };
+		B2E4E8DA1AB6B8DB00C8CBF9 /* Level2Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level2Dashboard.swift; sourceTree = "<group>"; };
+		B2E4E8DD1AB6B8EE00C8CBF9 /* ThrustDataLookup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrustDataLookup.swift; sourceTree = "<group>"; };
+		B2E4E8DF1AB6B9BE00C8CBF9 /* FileLevelLookup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLevelLookup.swift; sourceTree = "<group>"; };
+		B2E4E8E11AB6BB4900C8CBF9 /* JetSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JetSprite.swift; sourceTree = "<group>"; };
+		B2E4E8E31AB6BB7C00C8CBF9 /* RandomStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomStuff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +246,16 @@
 			isa = PBXGroup;
 			children = (
 				B20D26EE1AB53BDB00EDE1E8 /* AppDelegate.swift */,
+				B2E4E8D71AB6B8BB00C8CBF9 /* Dashboard.swift */,
 				B20D26F01AB53BDB00EDE1E8 /* GameScene.swift */,
 				B20D26F21AB53BDB00EDE1E8 /* GameScene.sks */,
+				B2E4E8D91AB6B8DB00C8CBF9 /* JetDashboardData.swift */,
+				B2E4E8E11AB6BB4900C8CBF9 /* JetSprite.swift */,
+				B2E4E8DA1AB6B8DB00C8CBF9 /* Level2Dashboard.swift */,
+				B2E4E8D11AB6B87A00C8CBF9 /* MyLevel2Scene.swift */,
+				B2E4E8D31AB6B89300C8CBF9 /* MonsterTextures.swift */,
+				B2E4E8D41AB6B89300C8CBF9 /* MyCollisionMasks.swift */,
+				B2E4E8DD1AB6B8EE00C8CBF9 /* ThrustDataLookup.swift */,
 				B20D26F41AB53BDB00EDE1E8 /* Images.xcassets */,
 				B20D27171AB5456300EDE1E8 /* monster.atlas */,
 				B20D270D1AB53D0E00EDE1E8 /* Jet.xcassets */,
@@ -305,8 +333,10 @@
 			children = (
 				B2E4E8A81AB6B47100C8CBF9 /* GameKitStuff.h */,
 				B2E4E8C31AB6B4C000C8CBF9 /* AnimationStuff.swift */,
+				B2E4E8DF1AB6B9BE00C8CBF9 /* FileLevelLookup.swift */,
 				B2E4E8CF1AB6B59200C8CBF9 /* FloatingPointStuff.swift */,
 				B2E4E8C51AB6B53200C8CBF9 /* PhysicStuff.swift */,
+				B2E4E8E31AB6BB7C00C8CBF9 /* RandomStuff.swift */,
 				B2E4E8C71AB6B54200C8CBF9 /* ScalingStuff.swift */,
 				B2E4E8C91AB6B54F00C8CBF9 /* SceneStuff.swift */,
 				B2E4E8CB1AB6B56000C8CBF9 /* Speedometer.swift */,
@@ -589,7 +619,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E4E8D51AB6B89300C8CBF9 /* MonsterTextures.swift in Sources */,
+				B2E4E8DB1AB6B8DB00C8CBF9 /* JetDashboardData.swift in Sources */,
+				B2E4E8DC1AB6B8DB00C8CBF9 /* Level2Dashboard.swift in Sources */,
+				B2E4E8D21AB6B87A00C8CBF9 /* MyLevel2Scene.swift in Sources */,
+				B2E4E8D61AB6B89300C8CBF9 /* MyCollisionMasks.swift in Sources */,
+				B2E4E8DE1AB6B8EE00C8CBF9 /* ThrustDataLookup.swift in Sources */,
+				B2E4E8E21AB6BB4900C8CBF9 /* JetSprite.swift in Sources */,
 				B20D26F11AB53BDB00EDE1E8 /* GameScene.swift in Sources */,
+				B2E4E8D81AB6B8BB00C8CBF9 /* Dashboard.swift in Sources */,
 				B20D26EF1AB53BDB00EDE1E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,7 +661,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E4E8C81AB6B54200C8CBF9 /* ScalingStuff.swift in Sources */,
+				B2E4E8E41AB6BB7C00C8CBF9 /* RandomStuff.swift in Sources */,
 				B2E4E8CE1AB6B56A00C8CBF9 /* VectorStuff.swift in Sources */,
+				B2E4E8E01AB6B9BE00C8CBF9 /* FileLevelLookup.swift in Sources */,
 				B2E4E8CC1AB6B56000C8CBF9 /* Speedometer.swift in Sources */,
 				B2E4E8CA1AB6B54F00C8CBF9 /* SceneStuff.swift in Sources */,
 				B2E4E8D01AB6B59200C8CBF9 /* FloatingPointStuff.swift in Sources */,

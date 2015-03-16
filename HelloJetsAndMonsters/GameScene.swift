@@ -10,48 +10,24 @@ import SpriteKit
 import TestFrameWork
 import GameKitStuff
 
-
 class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
+    let myLabel: SKLabelNode
+    
+    required init?(coder aDecoder: NSCoder) {
+        myLabel = SKLabelNode(fontNamed:"Chalkduster")
+        super.init(coder: aDecoder)
+        
+        // MJ moved this from didMoveToView. NB Swift allows constant members to be manipulated
+        // in the constructors.
         myLabel.text = "Hello, World!";
         myLabel.fontSize = 65;
         myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        
-        let jetTexture = SKTexture(imageNamed: "Jet")
+    }
+    
+    override func didMoveToView(view: SKView) {
+        /* Setup your scene here */
         
         self.addChild(myLabel)
-        
-        var node = self.childNodeWithName("Jet")
-        
-        let jet = SKSpriteNode(texture: jetTexture)
-        jet.position = node!.position
-        
-        self.addChild(jet)
-
-        node?.removeFromParent()
-        
-        let projectileTexture = SKTexture(imageNamed: "Projectile")
-        
-        node = self.childNodeWithName("projectile")
-        
-        let projectile = SKSpriteNode(texture: projectileTexture)
-        projectile.position = node!.position
-        
-        self.addChild(projectile)
-        
-        node?.removeFromParent()
-
-        let x = MyTest()
-        x.GoodBye()
-        
-        myLabel.text = x.Greeting
-        
-        let testTextures = Array<SKTexture>()
-        
-        let testAnimation = AnimationStuff(explodeTextures: testTextures)
-        
     }
     
     override func mouseDown(theEvent: NSEvent) {
@@ -67,6 +43,10 @@ class GameScene: SKScene {
         sprite.runAction(SKAction.repeatActionForever(action))
         
         self.addChild(sprite)
+        
+        // MJ added this.
+        let myscene = MyLevel2Scene.UnarchiveSKSceneFromFile("MyLevel2Scene") as? MyLevel2Scene
+        myLabel.FadeNodeAwayToScene(myscene!, view: self.view!)
     }
     
     override func update(currentTime: CFTimeInterval) {

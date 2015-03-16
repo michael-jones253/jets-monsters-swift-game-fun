@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-func DifferentByPercentOrMore(num1: CGFloat, num2: CGFloat, percentage: Int)->Bool {
+public func DifferentByPercentOrMore(num1: CGFloat, num2: CGFloat, percentage: Int)->Bool {
     let percentageNum1 = fabs(num1) * CGFloat(percentage) / 100
     
     let difference = fabs(num1 - num2)
@@ -17,11 +17,11 @@ func DifferentByPercentOrMore(num1: CGFloat, num2: CGFloat, percentage: Int)->Bo
     return difference > percentageNum1
 }
 
-func GetSmoothedUpdate(accumulated: CGFloat, update: CGFloat)->CGFloat {
+public func GetSmoothedUpdate(accumulated: CGFloat, update: CGFloat)->CGFloat {
     return accumulated * 0.5 + update * 0.5
 }
 
-func GetSmoothedUpdate(#accumulated: CGFloat, #update: CGFloat, #percentageWeightRise: Int, #percentageWeightFall: Int)->CGFloat {
+public func GetSmoothedUpdate(#accumulated: CGFloat, #update: CGFloat, #percentageWeightRise: Int, #percentageWeightFall: Int)->CGFloat {
     var updateWeighting = CGFloat(percentageWeightRise)
     if update < accumulated {
         updateWeighting = CGFloat(percentageWeightFall)

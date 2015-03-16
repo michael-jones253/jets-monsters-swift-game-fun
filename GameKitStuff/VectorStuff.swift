@@ -9,11 +9,11 @@
 import Foundation
 import SpriteKit
 
-func GetMagnitudeFromVector(vector: CGVector)->CGFloat {
+public func GetMagnitudeFromVector(vector: CGVector)->CGFloat {
     return sqrt(vector.dx * vector.dx + vector.dy * vector.dy)
 }
 
-func GetVectorFromRotation(spaceSprite:SKSpriteNode, #magnitude: CGFloat, #extraRotation: CGFloat)->CGVector {
+public func GetVectorFromRotation(spaceSprite:SKSpriteNode, #magnitude: CGFloat, #extraRotation: CGFloat)->CGVector {
     // zRotation is about Z axis and is 0 from the y axis. Parametric equation is from x axis.
     // So if we want lift instead of forward thrust add 90 degrees of rotation via the adjustment parameter.
     // Rotation can also be more than one rotation so modulus

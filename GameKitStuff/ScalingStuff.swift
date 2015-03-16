@@ -10,7 +10,7 @@ import Foundation
 import SpriteKit
 
 
-func CreateSpritesFromScaleAndPositionPlist(#plistName:String, #spriteTexture:SKTexture) ->Array<SKSpriteNode>{
+public func CreateSpritesFromScaleAndPositionPlist(#plistName:String, #spriteTexture:SKTexture) ->Array<SKSpriteNode>{
     var nodes = Array<SKSpriteNode>()
     let dataFile = NSBundle.mainBundle().pathForResource(plistName, ofType: nil)
     let spriteData = NSArray(contentsOfFile: dataFile!)

@@ -9,18 +9,18 @@
 import Foundation
 import SpriteKit
 
-class Speedometer {
+public class Speedometer {
     private var myNeedle: SKSpriteNode
     private var mySpeed: CGFloat = 0.0
     private var myMaxSpeed: CGFloat
     
-    init(needle: SKSpriteNode, maxSpeed: CGFloat) {
+    public init(needle: SKSpriteNode, maxSpeed: CGFloat) {
         myNeedle = needle
         myNeedle.anchorPoint.x = 1
         myMaxSpeed = maxSpeed
     }
     
-    var Colour: SKColor {
+    public var Colour: SKColor {
         get {
             return myNeedle.color
         }
@@ -30,7 +30,7 @@ class Speedometer {
         }
     }
     
-    func Update(speed: CGFloat) {
+    public func Update(speed: CGFloat) {
         // FIX ME weighting as init parameters and configurable.
         // A greater percentage for speed rise than fall probably looks best.
         mySpeed = GetSmoothedUpdate(accumulated: mySpeed, update: speed, percentageWeightRise: 20, percentageWeightFall: 10)
