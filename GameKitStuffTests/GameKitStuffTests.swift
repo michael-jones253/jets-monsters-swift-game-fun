@@ -1,16 +1,15 @@
 //
-//  HelloJetsAndMonstersTests.swift
-//  HelloJetsAndMonstersTests
+//  GameKitStuffTests.swift
+//  GameKitStuffTests
 //
-//  Created by Michael Jones on 15/03/2015.
+//  Created by Michael Jones on 16/03/2015.
 //  Copyright (c) 2015 Michael Jones. All rights reserved.
 //
 
 import Cocoa
 import XCTest
-//import TestOsxLibrary
 
-class HelloJetsAndMonstersTests: XCTestCase {
+class GameKitStuffTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

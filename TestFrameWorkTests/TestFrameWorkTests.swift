@@ -1,16 +1,16 @@
 //
-//  HelloJetsAndMonstersTests.swift
-//  HelloJetsAndMonstersTests
+//  TestFrameWorkTests.swift
+//  TestFrameWorkTests
 //
-//  Created by Michael Jones on 15/03/2015.
+//  Created by Michael Jones on 16/03/2015.
 //  Copyright (c) 2015 Michael Jones. All rights reserved.
 //
 
 import Cocoa
 import XCTest
-//import TestOsxLibrary
+import TestFrameWork
 
-class HelloJetsAndMonstersTests: XCTestCase {
+class TestFrameWorkTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -24,6 +24,11 @@ class HelloJetsAndMonstersTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
+        let myTest = MyTest()
+        
+        myTest.GoodBye()
+        
+        
         XCTAssert(true, "Pass")
     }
     
