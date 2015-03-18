@@ -19,9 +19,12 @@ public func CreateSpritesFromScaleAndPositionPlist(#plistName:String, #spriteTex
         let nodeDictionary = spriteData![i] as NSDictionary
         
         let scale = CGFloat(nodeDictionary["Scale"] as NSNumber)
-        let position = NSPointFromString(nodeDictionary["Position"] as String)
-        
+#if os(OSX)
+        let position = NSPointFromString(nodeDictionary["Position"] as String)        
         let cgPosition = NSPointToCGPoint(position)
+    #else
+        let cgPosition = CGPointFromString(nodeDictionary["Position"] as String)
+#endif
         
         let sprite = SKSpriteNode(texture: spriteTexture)
         sprite.position = cgPosition

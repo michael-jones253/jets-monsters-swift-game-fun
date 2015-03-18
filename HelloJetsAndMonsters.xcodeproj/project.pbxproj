@@ -19,6 +19,13 @@
 		B20D27181AB5456300EDE1E8 /* monster.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B20D27171AB5456300EDE1E8 /* monster.atlas */; };
 		B20D271A1AB5475100EDE1E8 /* JetSprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B20D27191AB5475100EDE1E8 /* JetSprites.atlas */; };
 		B2533C291AB5536200C9642C /* Projectile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2533C281AB5536200C9642C /* Projectile.xcassets */; };
+		B2B36A461AB6CDA700256B84 /* ThrustDataLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2B36A451AB6CDA700256B84 /* ThrustDataLookup.plist */; };
+		B2B36A481AB6CDC700256B84 /* MonsterLevel2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2B36A471AB6CDC700256B84 /* MonsterLevel2.plist */; };
+		B2B36A4A1AB6CDD800256B84 /* Monster.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2B36A491AB6CDD800256B84 /* Monster.plist */; };
+		B2B36A4C1AB6CDF900256B84 /* MySceneFileLevelLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2B36A4B1AB6CDF900256B84 /* MySceneFileLevelLookup.plist */; };
+		B2B36A4E1AB6CE8400256B84 /* MyLevel2Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B2B36A4D1AB6CE8400256B84 /* MyLevel2Scene.sks */; };
+		B2B36A501AB6CEAF00256B84 /* MyLevel2FinalScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B2B36A4F1AB6CEAF00256B84 /* MyLevel2FinalScene.sks */; };
+		B2B36A521AB6CF3B00256B84 /* MyMonsterFileLevelLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2B36A511AB6CF3B00256B84 /* MyMonsterFileLevelLookup.plist */; };
 		B2C1642A1AB6776F001A964A /* TestFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C164291AB6776F001A964A /* TestFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2C164301AB67770001A964A /* TestFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C164251AB6776F001A964A /* TestFrameWork.framework */; };
 		B2C164391AB67770001A964A /* TestFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C164381AB67770001A964A /* TestFrameWorkTests.swift */; };
@@ -133,6 +140,13 @@
 		B20D27171AB5456300EDE1E8 /* monster.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = monster.atlas; sourceTree = "<group>"; };
 		B20D27191AB5475100EDE1E8 /* JetSprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = JetSprites.atlas; sourceTree = "<group>"; };
 		B2533C281AB5536200C9642C /* Projectile.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Projectile.xcassets; sourceTree = "<group>"; };
+		B2B36A451AB6CDA700256B84 /* ThrustDataLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThrustDataLookup.plist; sourceTree = "<group>"; };
+		B2B36A471AB6CDC700256B84 /* MonsterLevel2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MonsterLevel2.plist; sourceTree = "<group>"; };
+		B2B36A491AB6CDD800256B84 /* Monster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Monster.plist; sourceTree = "<group>"; };
+		B2B36A4B1AB6CDF900256B84 /* MySceneFileLevelLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MySceneFileLevelLookup.plist; sourceTree = "<group>"; };
+		B2B36A4D1AB6CE8400256B84 /* MyLevel2Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyLevel2Scene.sks; sourceTree = "<group>"; };
+		B2B36A4F1AB6CEAF00256B84 /* MyLevel2FinalScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyLevel2FinalScene.sks; sourceTree = "<group>"; };
+		B2B36A511AB6CF3B00256B84 /* MyMonsterFileLevelLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyMonsterFileLevelLookup.plist; sourceTree = "<group>"; };
 		B2C164251AB6776F001A964A /* TestFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C164281AB6776F001A964A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2C164291AB6776F001A964A /* TestFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrameWork.h; sourceTree = "<group>"; };
@@ -253,9 +267,16 @@
 				B2E4E8E11AB6BB4900C8CBF9 /* JetSprite.swift */,
 				B2E4E8DA1AB6B8DB00C8CBF9 /* Level2Dashboard.swift */,
 				B2E4E8D11AB6B87A00C8CBF9 /* MyLevel2Scene.swift */,
+				B2B36A4F1AB6CEAF00256B84 /* MyLevel2FinalScene.sks */,
+				B2B36A4D1AB6CE8400256B84 /* MyLevel2Scene.sks */,
+				B2B36A511AB6CF3B00256B84 /* MyMonsterFileLevelLookup.plist */,
+				B2B36A4B1AB6CDF900256B84 /* MySceneFileLevelLookup.plist */,
 				B2E4E8D31AB6B89300C8CBF9 /* MonsterTextures.swift */,
+				B2B36A471AB6CDC700256B84 /* MonsterLevel2.plist */,
+				B2B36A491AB6CDD800256B84 /* Monster.plist */,
 				B2E4E8D41AB6B89300C8CBF9 /* MyCollisionMasks.swift */,
 				B2E4E8DD1AB6B8EE00C8CBF9 /* ThrustDataLookup.swift */,
+				B2B36A451AB6CDA700256B84 /* ThrustDataLookup.plist */,
 				B20D26F41AB53BDB00EDE1E8 /* Images.xcassets */,
 				B20D27171AB5456300EDE1E8 /* monster.atlas */,
 				B20D270D1AB53D0E00EDE1E8 /* Jet.xcassets */,
@@ -565,12 +586,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B36A4E1AB6CE8400256B84 /* MyLevel2Scene.sks in Resources */,
 				B20D271A1AB5475100EDE1E8 /* JetSprites.atlas in Resources */,
+				B2B36A501AB6CEAF00256B84 /* MyLevel2FinalScene.sks in Resources */,
 				B20D27161AB5454600EDE1E8 /* monster.atlas in Resources */,
+				B2B36A4C1AB6CDF900256B84 /* MySceneFileLevelLookup.plist in Resources */,
 				B20D27101AB5417300EDE1E8 /* Monster.xcassets in Resources */,
 				B20D26F31AB53BDB00EDE1E8 /* GameScene.sks in Resources */,
 				B20D26F51AB53BDB00EDE1E8 /* Images.xcassets in Resources */,
+				B2B36A521AB6CF3B00256B84 /* MyMonsterFileLevelLookup.plist in Resources */,
 				B20D26F81AB53BDB00EDE1E8 /* MainMenu.xib in Resources */,
+				B2B36A461AB6CDA700256B84 /* ThrustDataLookup.plist in Resources */,
+				B2B36A4A1AB6CDD800256B84 /* Monster.plist in Resources */,
+				B2B36A481AB6CDC700256B84 /* MonsterLevel2.plist in Resources */,
 				B20D270E1AB53D0E00EDE1E8 /* Jet.xcassets in Resources */,
 				B20D27181AB5456300EDE1E8 /* monster.atlas in Resources */,
 				B2533C291AB5536200C9642C /* Projectile.xcassets in Resources */,
@@ -814,13 +842,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/michaeljones/Documents/xcodestuff/MyLibraryStuff;
 				INFOPLIST_FILE = HelloJetsAndMonsters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/michaeljones/Documents/xcodestuff/MyLibraryStuff/TestOsxLibrary./usr/local/lib,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -832,10 +856,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = HelloJetsAndMonsters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/michaeljones/Documents/xcodestuff/MyLibraryStuff/TestOsxLibrary./usr/local/lib,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1097,6 +1118,7 @@
 				B2E4E8BF1AB6B47100C8CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2E4E8C01AB6B47100C8CBF9 /* Build configuration list for PBXNativeTarget "GameKitStuffTests" */ = {
 			isa = XCConfigurationList;
@@ -1105,6 +1127,7 @@
 				B2E4E8C21AB6B47100C8CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

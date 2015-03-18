@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>UpperTime</key>
+		<integer>8</integer>
+		<key>LowerTime</key>
+		<real>4</real>
+		<key>Scale</key>
+		<real>0.5</real>
+		<key>Position</key>
+		<string>{200,300}</string>
+	</dict>
+	<dict>
+		<key>UpperTime</key>
+		<integer>8</integer>
+		<key>LowerTime</key>
+		<integer>5</integer>
+		<key>Scale</key>
+		<integer>2</integer>
+		<key>Position</key>
+		<string>{300,300}</string>
+	</dict>
+	<dict>
+		<key>UpperTime</key>
+		<integer>7</integer>
+		<key>LowerTime</key>
+		<integer>5</integer>
+		<key>Scale</key>
+		<real>2.5</real>
+		<key>Position</key>
+		<string>{400,300}</string>
+	</dict>
+	<dict>
+		<key>UpperTime</key>
+		<integer>7</integer>
+		<key>LowerTime</key>
+		<integer>5</integer>
+		<key>Scale</key>
+		<real>2.5</real>
+		<key>Position</key>
+		<string>{500,300}</string>
+	</dict>
+</array>
+</plist>
