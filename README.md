@@ -5,9 +5,9 @@ OS X SpriteKit game in the swift programming language. My first attempt at writi
 Coming from a C++/C background Swift seems a much more palatable syntax to Objective-C. However, no exceptions? The optional or nullable value somewhat salvages the situation, so instead of throwing an exception let the function return nil for the object.
 
 ## Motivation for writing this game.
-I was applying for a C++ game job and it was suggested by the prospective employer that I try a home game project. Xcode and SpriteKit is free and quick to learn compared to Unity. Plus I got to learn Swift. I wasn't trying to produce a commercially appealing game, just learn game concepts. However, I did try and use some best practises and scalability.
+I was applying for a C++ game job at a future start-up and it was suggested by the prospective employer that I try a home game project. Xcode and SpriteKit is free and quick to learn compared to Unity. Plus I got to learn Swift. I wasn't trying to produce a commercially appealing game, just learn game concepts. However, I did try and use some best practises and scalability.
 
-The employer seemed happy enough with what I had done when I demonstrated it and gave a brief walk-through, however the start up will not get going until later this year, by which time I hope to be employed. However, it is always good to keep the mind active :)
+The employer seemed happy with what I had done when I demonstrated it and gave a brief walk-through, however the start up wasn't ready to start up.
 
 ## Some best practises and scalability used.
 
@@ -25,9 +25,9 @@ The SpriteKit physics body is necessary for collision detection in both cases ab
 
 So this game is based upon monsters that move around randomly using method 1. and dynamic physics off. The jets have dynamic physics on and are moved by using method 2.
 
-Level 2 of this game is exactly the same code as Level 1, however the scene is re-arranged by loading level 2 from different configuration files. The jets also have different dynamic behaviour due to being configured with different amounts of ballast and being given different amounts of thrust and dampening.
+Level 2 of this game is exactly the same code as Level 1, however the scene is re-arranged by loading level 2 from different configuration files. The jets also have different dynamic behaviour due to being configured with different amounts of ballast and being given different amounts of thrust and dampening. The point of Level 2 is to demonstrate the ability of the game to load different behaviour from configuration.
 
-To actually get the jets to fly and be reasonably controllable (but not too easy to control) takes a bit of messing around with the physics properties. I made all these properties configurable in keeping with best practices.
+To actually get the jets to fly and be reasonably controllable (but not too easy to control) took a bit of messing around with the physics properties. I made all these properties configurable in keeping with best practices.
 
 
 
