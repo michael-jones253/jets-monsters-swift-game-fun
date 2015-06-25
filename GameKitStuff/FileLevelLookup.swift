@@ -22,7 +22,7 @@ public class FileLevelLookup {
             return nil
         }
 
-        let sceneFileName = mySceneLookup[index] as NSString
+        let sceneFileName = mySceneLookup[index] as! NSString
         
         return String(sceneFileName)
     }

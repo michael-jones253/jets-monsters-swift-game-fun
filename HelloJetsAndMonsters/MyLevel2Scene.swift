@@ -19,7 +19,7 @@ class MyLevel2Scene : SKScene, SKPhysicsContactDelegate {
     private let mySceneLevelConfiguration: FileLevelLookup
     private let myMonsterLevelConfiguration: FileLevelLookup
     private let myThrustDataLookup: ThrustDataLookup
-    private let myMonsters = Array<SKSpriteNode>()
+    private var myMonsters = Array<SKSpriteNode>()
     private let myMissileTexture: SKTexture
     private let myMonsterExplodeTextures: MonsterTextures
     private let myMonsterAnimationStuff: AnimationStuff
@@ -79,7 +79,7 @@ class MyLevel2Scene : SKScene, SKPhysicsContactDelegate {
 
         self.enumerateChildNodesWithName("jet[0-9]", usingBlock: {
             sceneNode, stop in
-            let sceneSprite = sceneNode as SKSpriteNode
+            let sceneSprite = sceneNode as! SKSpriteNode
             
             // Get the thrust data for this particular type of jet (identified by suffix number).
             let jetIdentifiers = sceneSprite.name?.componentsSeparatedByString("jet")
@@ -116,20 +116,20 @@ class MyLevel2Scene : SKScene, SKPhysicsContactDelegate {
             let spacePosition = CGPoint(x:jetNode.position.x - 30, y:jetNode.frame.height * 2);
             jetNode.runAction(SKAction.moveTo(spacePosition, duration: 1.0))
 
-            let jetSprite = jetNode as SKSpriteNode
+            let jetSprite = jetNode as! SKSpriteNode
         })
         
         self.enumerateChildNodesWithName("monster", usingBlock: {
             monsterNode, stop in
-            let monsterSprite = monsterNode as SKSpriteNode
+            let monsterSprite = monsterNode as! SKSpriteNode
             
             // Dynamic of false means that the monsters do not react to scene physics, therefore all movement
             // must be directly manipulated with move and animation actions.
             // However collisions are still detected.
             SetupNodePhysics(monsterSprite, isDynamic: false, nodeCategory: MyCollisionMasks.MonsterMask, contactNotificationMask: MyCollisionMasks.MissileMask)
             
-            let lowerLimit = monsterSprite.userData?["LowerTime"] as NSNumber?
-            let upperLimit = monsterSprite.userData?["UpperTime"] as NSNumber?
+            let lowerLimit = monsterSprite.userData?["LowerTime"] as! NSNumber?
+            let upperLimit = monsterSprite.userData?["UpperTime"] as! NSNumber?
             
             var lowerTime = CGFloat(4.0)
             var upperTime = CGFloat(8.0)
@@ -158,7 +158,7 @@ class MyLevel2Scene : SKScene, SKPhysicsContactDelegate {
 
     private func AddCurrentDashboard(jet: JetSprite) {
         var needle = self.childNodeWithName("Needle")
-        var speedometerNeedle = needle as SKSpriteNode?
+        var speedometerNeedle = needle as! SKSpriteNode?
         
         // This throws away the old dashboard. Making new objects is more robust than re-initialising them
         // and good for situations where making the new object is not expensive.
@@ -171,7 +171,7 @@ class MyLevel2Scene : SKScene, SKPhysicsContactDelegate {
     
     private func ResetNeedle() {
         var needle = self.childNodeWithName("Needle")
-        var speedometerNeedle = needle as SKSpriteNode?
+        var speedometerNeedle = needle as! SKSpriteNode?
         speedometerNeedle?.zRotation = 0.0
     }
     
@@ -308,7 +308,7 @@ class MyLevel2Scene : SKScene, SKPhysicsContactDelegate {
         for monster in monsters {
             if missiles.count > 0 {
                 monster.removeAllActions()
-                myMonsterAnimationStuff.ExplodeAndRemoveSprite(monster, monsterGone)
+                myMonsterAnimationStuff.ExplodeAndRemoveSprite(monster, callback: monsterGone)
                 
                 // TO DO: animate missile destruction.
                 missiles[0].removeFromParent()

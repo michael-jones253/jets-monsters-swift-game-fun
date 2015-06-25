@@ -12,12 +12,12 @@ import SpriteKit
 
 extension SKNode {
     public class func UnarchiveSKSceneFromFile(file : NSString) -> SKNode? {
-        if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
+        if let path = NSBundle.mainBundle().pathForResource(file as String, ofType: "sks") {
             var sceneData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)!
             var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData)
             
             archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
-            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as SKScene
+            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as! SKScene
             archiver.finishDecoding()
             return scene
         } else {
@@ -37,7 +37,7 @@ extension SKLabelNode {
     }
     
     public func FadeNodeInAndAwayToScene(nextScene:SKScene, view:SKView, text: NSString) {
-        self.text = text
+        self.text = text as String
         FadeNodeInAndAwayToScene(nextScene, view: view)
     }
 
@@ -58,7 +58,7 @@ extension SKLabelNode {
     
     public func FadeNodeInToScene(text: NSString) {
         let fadeIn = SKAction.fadeInWithDuration(1.0)
-        self.text = text
+        self.text = text as String
         self.runAction(fadeIn)
     }
     
@@ -66,7 +66,7 @@ extension SKLabelNode {
         let fadeIn = SKAction.fadeInWithDuration(1.0)
         let fadeAway = SKAction.fadeOutWithDuration(2.0)
 
-        self.text = text
+        self.text = text as String
         self.runAction(SKAction.sequence([fadeIn, fadeAway]))
     }
 }

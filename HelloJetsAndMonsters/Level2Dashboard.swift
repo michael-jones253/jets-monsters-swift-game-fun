@@ -99,7 +99,7 @@ class Level2Dashboard : Dashboard {
             myThrustLabel.fontColor = SKColor.whiteColor()
         }
         
-        mySpeedLabel.text = NSString(format: "Speed: %.2f", Float(data.Speed))
+        mySpeedLabel.text = NSString(format: "Speed: %.2f", Float(data.Speed)) as String
         
         if (data.Speed > myMaxSpeed) {
             myMaxSpeed = data.Speed

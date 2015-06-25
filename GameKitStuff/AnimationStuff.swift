@@ -12,7 +12,7 @@ import SpriteKit
 public class AnimationStuff {
     
     // Efficiency: actions are immutable objects, create once, run many times and share across sprites.
-    private let myExplodeTextures: Array<SKTexture> = []
+    private var myExplodeTextures: Array<SKTexture> = []
     private let myAnimateAction: SKAction
     private let myWaitAction = SKAction.waitForDuration(1)
     private let myFadeAction = SKAction.fadeOutWithDuration(0.5)

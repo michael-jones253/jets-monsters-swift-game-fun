@@ -10,7 +10,7 @@ import Foundation
 import SpriteKit
 
 class MonsterTextures {
-    private let myExplodeTextures: Array<SKTexture> = []
+    private var myExplodeTextures: Array<SKTexture> = []
     private let myMonsterAtlas = SKTextureAtlas(named: "monster.atlas")    
     
     var ExplodeTextures: Array<SKTexture> {

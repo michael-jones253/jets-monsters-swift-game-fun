@@ -16,11 +16,11 @@ public func CreateSpritesFromScaleAndPositionPlist(#plistName:String, #spriteTex
     let spriteData = NSArray(contentsOfFile: dataFile!)
     
     for i in 0..<spriteData!.count {
-        let nodeDictionary = spriteData![i] as NSDictionary
+        let nodeDictionary = spriteData![i] as! NSDictionary
         
-        let scale = CGFloat(nodeDictionary["Scale"] as NSNumber)
+        let scale = CGFloat(nodeDictionary["Scale"] as! NSNumber)
 #if os(OSX)
-        let position = NSPointFromString(nodeDictionary["Position"] as String)        
+        let position = NSPointFromString(nodeDictionary["Position"] as! String)        
         let cgPosition = NSPointToCGPoint(position)
     #else
         let cgPosition = CGPointFromString(nodeDictionary["Position"] as String)
